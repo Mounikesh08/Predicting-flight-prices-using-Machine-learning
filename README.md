@@ -32,7 +32,6 @@ What data you used (Amadeus API).
 - Python (Flask, Scikit-learn, Pandas)
 - Azure (Data Factory, Databricks, Data Lake)
 - SQL Server
-- Power BI
 - Matplotlib
 
 ## How to Run Locally
