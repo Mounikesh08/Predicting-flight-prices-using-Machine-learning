@@ -1,4 +1,4 @@
-# Predicting-flight-prices-using-Machine-learning
+# Predicting-Flight-Ticket-prices-using-Machine-learning
 Mounikesh Goud
 # Predicting Flight Ticket Prices Using Machine Learning
 
