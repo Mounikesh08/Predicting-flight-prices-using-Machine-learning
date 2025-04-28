@@ -47,8 +47,6 @@ What data you used (Amadeus API).
 - `/templates` — HTML files
 - `/app.py` — main Flask application
 
-## Screenshots
-(Add some screenshots from your Flask app or prediction graphs.)
 
 ## Acknowledgements
 - Amadeus for Developers API
