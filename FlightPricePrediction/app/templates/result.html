@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Deal Result</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <div class="card shadow p-4">
+      <h2 class="text-center mb-4 text-success">Flight Deal Evaluation</h2>
+      <div class="mb-4 text-center">
+        <h4><span class="text-secondary">Fare Class:</span> {{ fare_class }}</h4>
+        <h5><span class="text-secondary">Your Price:</span> ${{ "%.2f"|format(input_price) }}</h5>
+        <h5><span class="text-secondary">Optimal Price:</span> ${{ "%.2f"|format(optimal_price) }}</h5>
+        <h3 class="text-{{ 'success' if is_good_deal == 'Yes' else 'danger' }}">Is it a good deal? {{ is_good_deal }}</h3>
+      </div>
+      <div class="mb-4">
+        <h5>Forecasted Optimal Prices:</h5>
+        <ul class="list-group">
+          {% for day, price in forecast.items() %}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              {{ day }} days before departure
+              <span class="badge bg-primary rounded-pill">${{ "%.2f"|format(price) }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="mb-4 text-center">
+        <img src="/{{ plot_path }}" alt="Price Forecast Graph" class="img-fluid border rounded shadow">
+      </div>
+      <div class="text-center">
+        <a href="/" class="btn btn-outline-primary">Check Another</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
