@@ -1,5 +1,5 @@
 
-# Predicting Flight Ticket Prices Using Machine Learning With Azure
+# Predicting Flight Ticket Prices Using Machine Learning And Azure
 
 ## Project Overview
 Brief explanation of the project.
